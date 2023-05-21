@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form de Registro</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+    <script src="js/cadastro.js" defer></script>
+</head>
+<body>
+    
+    <div id="caixalogo">
+        <img style="width: 100%"  src="img/logogrifo.png">
+    </div>
+    
+    <div id="CaixaPrincipal">
+      <h1>Cadastre-se</h1>
+      
+      <form id="cadastro" autocomplete="off">
+        
+        <div class="dados">
+            <span for="nome">Nome:</span>
+            <input type="text" name="name" id="nome" placeholder="Digite seu nome">
+        </div>
+
+        <div class="dados">
+            <span for="surname">Sobrenome:</span>
+            <input type="text" name="surname" id="sobrenome" placeholder="Digite seu sobrenome">
+        </div>
+
+        <div class="dados">
+            <span for="email">Email:</span>
+            <input type="text" name="email" id="email" placeholder="Digite seu email">
+            <small id="textEmail"></small>
+        </div>
+
+        <div class="dados">
+            <span for="password">Senha:</span>
+            <input type="password" name="password" id="senha" placeholder="Digite sua senha">
+            <small id="textSenha"></small>
+        </div>
+
+        <div class="dados">
+            <span for="type">Nivel de acesso:</span>
+            <select name="type" id="tipo">
+                <option value="Membro">Membro</option>
+                <option value="Socio">Socio</option>
+                <option value="Diretor">Diretor</option>
+            </select>
+        </div>
+
+        <div class="dados">
+            <input type="submit" id="botao_cadastrar" value="Cadastrar">
+        </div>
+        <small id="textForm"></small>
+      </form>
+
+      <a href="login.html">Ja tem seu cadastro? faca seu login</a>
+    </div>
+</body>
+</html>
